@@ -57,7 +57,7 @@ h5{
     display: block;
     width: 90%;
     margin-left: 5%;
-    margin-top: 50px;
+    margin-top: 30px;
 }
 
 #main-fetch{
@@ -205,4 +205,10 @@ h5{
     display: inline-block;
     vertical-align: middle;
     margin-left: 3%;
+}
+
+.github-button{
+    display: block;
+    margin-bottom: 15px;
+    margin-left: 5%;
 }

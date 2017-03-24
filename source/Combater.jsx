@@ -378,6 +378,7 @@ class Combater extends Component {
                     <h2>Our journey is the ocean of stars</h2>
                 </header>
     			<main id="main">
+                    <a className="github-button" href="https://github.com/byn9826/eve-combater" data-icon="octicon-star" data-style="mega" aria-label="Star byn9826/eve-combater on GitHub">Star</a>
                     {fetch}
                     <h5 id="main-notice">
                         * The analysis process takes time, please wait patientlly. Do not use it for battle in large scale.
