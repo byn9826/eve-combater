@@ -337,7 +337,7 @@ class Combater extends Component {
                             </select>
                         </div>
                         <div className="screen-option">
-                            <h5>Do not treat pilots from same alliance as enemy:</h5>
+                            <h5>Exclude pilots from same alliance:</h5>
                             <select className="form-control" value={this.state.checkAlliance} onChange={this.changeAlliance.bind(this)}>
                                 <option value="yes">Yes</option>
                                 <option value="no">No</option>
@@ -384,6 +384,12 @@ class Combater extends Component {
                         * The analysis process takes time, please wait patientlly. Do not use it for battle in large scale.
                     </h5>
     			</main>
+                <footer id="footer">
+                    <h5>
+                        <a href="https://github.com/byn9826">Author: baozier</a>
+                    </h5>
+                    <h5>API from EVE online and zkillboard</h5>
+                </footer>
             </div>
 		);
 	}
