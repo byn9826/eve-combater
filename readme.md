@@ -1,4 +1,4 @@
-#EVE-Combater
+# EVE-Combater
 Know your odds of winning in the coming combat.
 
 Use
@@ -16,6 +16,11 @@ or use this [link](http://other.thousanday.com/combater/)<br/>
 
 5.See the panel, try to adjust something.<br/>
 ![2](https://raw.githubusercontent.com/byn9826/eve-combater/master/~legend/2.JPG)<br/>
+
+Stack
+--
+React
+
 
 Acknowledge
 --
