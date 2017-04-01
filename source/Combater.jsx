@@ -68,7 +68,6 @@ class Combater extends Component {
                         pilotsName.push(friendsName[i]);
                     }
                 }
-                console.log(pilotsName);
             }
             //store all pilots ids
             let pilotsId = [];
@@ -118,11 +117,15 @@ class Combater extends Component {
             let friendAlliance = [], enemyAlliance = [];
             //loop all friends pilots info, get their alliance id
             for (let k = 0; k < friendIndex.length; k++) {
-                friendAlliance.push(pilotsInfo[friendIndex[k]].info.allianceID);
+				if (pilotsInfo[friendIndex[k]].info != null) {
+					friendAlliance.push(pilotsInfo[friendIndex[k]].info.allianceID);
+				}
             }
             //loop all enemy, get their alliance id
             for (let l = 0; l < enemyIndex.length; l++) {
-                enemyAlliance.push(pilotsInfo[enemyIndex[l]].info.allianceID);
+				if (pilotsInfo[enemyIndex[l]].info != null) {
+					enemyAlliance.push(pilotsInfo[enemyIndex[l]].info.allianceID);
+				}
             }
             //store pilots ignored for enemy check
             let whiteList = [];
@@ -280,7 +283,7 @@ class Combater extends Component {
             else {
                 enemyTotal = this.state.enemyIndex.length;
             }
-            //store all enemy alliance
+            //store all enemy alliance ids
             let targetAlliance = [];
             //loop through enemy alliance
             for (let i = 0; i < this.state.enemyAlliance.length; i++) {
@@ -310,10 +313,19 @@ class Combater extends Component {
                         }
                     }
                 }
+				let name = "Unknow";
+				if (targetAlliance[j] != 0 ) {
+					//use alliance id to get alliance name
+					let xmlhttp = new XMLHttpRequest();
+					xmlhttp.open("GET", "https://crest-tq.eveonline.com/alliances/" + targetAlliance[j] + "/", false);
+					xmlhttp.send();
+					let result = JSON.parse(xmlhttp.responseText);
+					name = result.name;
+				}
                 targets[j] = (
                     <div className="screen-target" key={j}>
                         <img src={"https://imageserver.eveonline.com/Alliance/" + targetAlliance[j] + "_128.png"} />
-                        <h5>{targetNumber[j]} Pilots</h5>
+                        <h5>{targetNumber[j]} Pilots FROM {name}</h5>
                     </div>
                 )
             }
