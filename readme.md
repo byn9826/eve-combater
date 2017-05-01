@@ -4,7 +4,7 @@ Know your odds of winning in the coming combat.
 Use
 --
 1. Download the this repo, open index.html in Chrome <br/>
-or use this [link](http://other.thousanday.com/combater/)<br/>
+or use this [link](https://byn9826.github.io/eve-combater/)<br/>
 
 2. Ctrl-C all the pilots name in solar chat windows to the textarea on the left, ctrl-c all the pilots name in your fleet chat windows to the textarea on the right<br/>
 ![3](https://raw.githubusercontent.com/byn9826/eve-combater/master/~legend/3.JPG)<br/>

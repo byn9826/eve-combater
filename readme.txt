@@ -1,4 +1,4 @@
-Live site address: http://other.thousanday.com/combater/
+Live site address: https://byn9826.github.io/eve-combater/
 
 
 This project use three APIS.
